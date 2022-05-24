@@ -61,4 +61,4 @@ $ npm run serve
 
 ## ライセンス
 - 本テンプレートは[Honkit](https://github.com/honkit/honkit)のライセンスに準じています。
-- Apache License 2.0です。
+- [Apache License 2.0全文](https://github.com/dtxmuramasa/HonkitTemplate/blob/main/LICENSE)
