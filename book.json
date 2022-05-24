@@ -1,7 +1,6 @@
 {
 	"language": "ja",
 	"plugins": [
-		"-sharing",
 		"hide-published-with",
 		"-lunr",
 		"-search",

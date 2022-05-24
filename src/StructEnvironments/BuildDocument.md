@@ -10,6 +10,13 @@
 
 
 
+## 動作確認環境
+- VSCode: 1.67.2
+- GitBash(VSCodeTerminalから利用): mintty3.6.1
+- bash: GNU bash, version 4.4.23(1)-release (x86_64-pc-msys)
+
+
+
 
 ## プロビジョニングスクリプトの実行
 - プロビジョニングスクリプトを実行すると、自動的にドキュメント生成環境の構築が完了します。
@@ -29,8 +36,9 @@ $ bash provision.sh
 - このセクションの手順は前述の「プロビジョニングスクリプトの実行」セクションの手順が成功しなかった場合にのみ行ってください。
 
 
-### nodeモジュールのインストール
-１．下記コマンドでnodeモジュールのインストールを行います。
+### １．nodeモジュールのインストール
+- 下記コマンドでnodeモジュールのインストールを行います。
+- Honkit用のプラグインもここでインストールします。
 
 ```
 $ npm install --save
@@ -38,18 +46,9 @@ $ npm install --save
 
 
 
-### Gitbookの環境構築
-
-
-１．Gitbookプラグインのインストールを行います。
+### ２．ドキュメントのビルド
+- ビルドを実行して環境構築の完了を確認します。
 
 ```
-$ ./node_modules/.bin/gitbook install
-```
-
-
-２．最後にビルドを実行して環境構築の完了を確認します。
-
-```
-$ ./node_modules/.bin/gitbook build ./ ./docs
+$ ./node_modules/.bin/honkit build ./ ./docs
 ```

@@ -1,5 +1,5 @@
 # exclude files.
-# - Gitbook
+# - Honkit
 .bookignore
 
 # - Git
@@ -8,6 +8,8 @@
 
 # - Npm
 package.json
+package-lock.json
 
 # - Others
 provision.sh
+LICENSE

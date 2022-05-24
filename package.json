@@ -1,13 +1,22 @@
 {
-	"name": "gitbook-template",
+	"name": "honkit-template",
 	"version": "1.0.0",
-	"description": "This is a template project of Gitbook.(for japanese project)",
+	"description": "This is a template project of Honkit.(for japanese project)",
 	"scripts": {
-		"build": "./node_modules/.bin/gitbook build ./ ./docs",
-		"serve": "./node_modules/.bin/gitbook serve"
+		"build": ".\\node_modules\\.bin\\honkit build .\\ .\\docs",
+		"serve": ".\\node_modules\\.bin\\honkit serve"
 	},
 	"dependencies": {
-		"gitbook-cli": "^2.3.2",
-		"safe-buffer": "^5.1.2"
+		"gitbook-plugin-code": "^0.1.0",
+		"gitbook-plugin-code-editor": "^1.2.1",
+		"gitbook-plugin-expandable-chapters": "^0.2.0",
+		"gitbook-plugin-hide-published-with": "0.0.1",
+		"gitbook-plugin-include-codeblock": "^3.2.3",
+		"gitbook-plugin-lunr": "^1.2.0",
+		"gitbook-plugin-search": "^2.2.1",
+		"gitbook-plugin-search-pro-kui": "^1.0.0",
+		"gitbook-plugin-uml": "^1.2.15",
+		"honkit": "^3.7.1",
+		"safe-buffer": "^5.2.1"
 	}
 }
