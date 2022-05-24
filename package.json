@@ -1,0 +1,13 @@
+{
+	"name": "gitbook-template",
+	"version": "1.0.0",
+	"description": "This is a template project of Gitbook.(for japanese project)",
+	"scripts": {
+		"build": "./node_modules/.bin/gitbook build ./ ./docs",
+		"serve": "./node_modules/.bin/gitbook serve"
+	},
+	"dependencies": {
+		"gitbook-cli": "^2.3.2",
+		"safe-buffer": "^5.1.2"
+	}
+}

@@ -1,0 +1,13 @@
+# exclude files.
+# - Gitbook
+.bookignore
+
+# - Git
+.gitattributes
+.gitignore
+
+# - Npm
+package.json
+
+# - Others
+provision.sh

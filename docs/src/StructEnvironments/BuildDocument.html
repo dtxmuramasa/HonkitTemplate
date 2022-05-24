@@ -1,0 +1,319 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ドキュメント生成環境構築 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro-kui/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code-editor/editor.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Generally.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索すると入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    環境構築
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Generally.html">
+            
+                <a href="Generally.html">
+            
+                    
+                    共通の環境構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="BuildDocument.html">
+            
+                <a href="BuildDocument.html">
+            
+                    
+                    ドキュメント生成環境構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBookで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ドキュメント生成環境構築</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x751F;&#x6210;&#x74B0;&#x5883;&#x69CB;&#x7BC9;">&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x751F;&#x6210;&#x74B0;&#x5883;&#x69CB;&#x7BC9;</h1>
+<h2 id="&#x524D;&#x63D0;&#x6761;&#x4EF6;">&#x524D;&#x63D0;&#x6761;&#x4EF6;</h2>
+<ol>
+<li><a href="Generally.html">&#x5171;&#x901A;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;</a>&#x304C;&#x5B8C;&#x4E86;&#x3057;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x524D;&#x63D0;&#x3068;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li>bash&#x304C;&#x52D5;&#x4F5C;&#x3059;&#x308B;CLI&#x304C;&#x5C0E;&#x5165;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x524D;&#x63D0;&#x3068;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li>&#x30AF;&#x30ED;&#x30FC;&#x30F3;&#x6E08;&#x307F;&#x306E;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x304C;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x306B;&#x3042;&#x308B;&#x3053;&#x3068;&#x3092;&#x524D;&#x63D0;&#x3068;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li>&#x4EE5;&#x964D;&#x306E;&#x64CD;&#x4F5C;&#x306F;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x306E;&#x30EB;&#x30FC;&#x30C8;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x4E0A;&#x3067;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;</li>
+</ol>
+<h2 id="&#x30D7;&#x30ED;&#x30D3;&#x30B8;&#x30E7;&#x30CB;&#x30F3;&#x30B0;&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x306E;&#x5B9F;&#x884C;">&#x30D7;&#x30ED;&#x30D3;&#x30B8;&#x30E7;&#x30CB;&#x30F3;&#x30B0;&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x306E;&#x5B9F;&#x884C;</h2>
+<ul>
+<li>&#x30D7;&#x30ED;&#x30D3;&#x30B8;&#x30E7;&#x30CB;&#x30F3;&#x30B0;&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3068;&#x3001;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x751F;&#x6210;&#x74B0;&#x5883;&#x306E;&#x69CB;&#x7BC9;&#x304C;&#x5B8C;&#x4E86;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li>&#x4F55;&#x3089;&#x304B;&#x306E;&#x7406;&#x7531;&#x306B;&#x3088;&#x308A;&#x5B8C;&#x4E86;&#x3067;&#x304D;&#x306A;&#x304B;&#x3063;&#x305F;&#x5834;&#x5408;&#x306F;&#x5F8C;&#x8FF0;&#x306E;&#x300C;&#x624B;&#x52D5;&#x3067;&#x74B0;&#x5883;&#x3092;&#x69CB;&#x7BC9;&#x3059;&#x308B;&#x300D;&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x624B;&#x9806;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</li>
+</ul>
+<p>&#xFF11;&#xFF0E;&#x4E0B;&#x8A18;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3067;&#x30D7;&#x30ED;&#x30D3;&#x30B8;&#x30E7;&#x30CB;&#x30F3;&#x30B0;&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code>$ bash provision.sh
+</code></pre><h2 id="&#x624B;&#x52D5;&#x3067;&#x74B0;&#x5883;&#x3092;&#x69CB;&#x7BC9;&#x3059;&#x308B;">&#x624B;&#x52D5;&#x3067;&#x74B0;&#x5883;&#x3092;&#x69CB;&#x7BC9;&#x3059;&#x308B;</h2>
+<ul>
+<li>&#x3053;&#x306E;&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x624B;&#x9806;&#x306F;&#x524D;&#x8FF0;&#x306E;&#x300C;&#x30D7;&#x30ED;&#x30D3;&#x30B8;&#x30E7;&#x30CB;&#x30F3;&#x30B0;&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x306E;&#x5B9F;&#x884C;&#x300D;&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x624B;&#x9806;&#x304C;&#x6210;&#x529F;&#x3057;&#x306A;&#x304B;&#x3063;&#x305F;&#x5834;&#x5408;&#x306B;&#x306E;&#x307F;&#x884C;&#x3063;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</li>
+</ul>
+<h3 id="node&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">node&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h3>
+<p>&#xFF11;&#xFF0E;&#x4E0B;&#x8A18;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3067;node&#x30E2;&#x30B8;&#x30E5;&#x30FC;&#x30EB;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<pre><code>$ npm install --save
+</code></pre><h3 id="gitbook&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;">Gitbook&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;</h3>
+<p>&#xFF11;&#xFF0E;Gitbook&#x30D7;&#x30E9;&#x30B0;&#x30A4;&#x30F3;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<pre><code>$ ./node_modules/.bin/gitbook install
+</code></pre><p>&#xFF12;&#xFF0E;&#x6700;&#x5F8C;&#x306B;&#x30D3;&#x30EB;&#x30C9;&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x74B0;&#x5883;&#x69CB;&#x7BC9;&#x306E;&#x5B8C;&#x4E86;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code>$ ./node_modules/.bin/gitbook build ./ ./docs
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Generally.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 共通の環境構築">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ドキュメント生成環境構築","level":"1.2.2","depth":2,"previous":{"title":"共通の環境構築","level":"1.2.1","depth":2,"path":"src/StructEnvironments/Generally.md","ref":"./src/StructEnvironments/Generally.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","hide-published-with","-lunr","-search","search-pro-kui","uml","expandable-chapters","include-codeblock","code-editor","code"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"code-editor":{},"code":{"copyButtons":true},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"uml":{"format":"svg","charset":"UTF-8","nailgun":false},"search-pro-kui":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"src/StructEnvironments/BuildDocument.md","mtime":"2018-12-26T02:01:57.438Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-26T02:24:10.991Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro-kui/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro-kui/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="http://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code-editor/editor.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
