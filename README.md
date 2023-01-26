@@ -1,11 +1,11 @@
 # はじめに
 
-## HonkitTemplateとは
+## [HonkitTemplate](https://github.com/dtxmuramasa/HonkitTemplate)とは
 - [Honkit](https://github.com/honkit/honkit)でプログラムの仕様書や設計書を作成するために必要なツール、プラグインをバンドルしたプロジェクトのテンプレートです。
 - もともとは[GitbookTemplate](https://github.com/dtxmuramasa/GitbookTemplate)でしたが、本体の[Gitbook](https://github.com/GitbookIO/gitbook)がLegacyとなり新しい環境に導入できなくなったため、Forkされた[Honkit](https://github.com/honkit/honkit)に差し替えたものになります。[azu](https://twitter.com/azu_re)様、ありがとうございます！
 
 ## 注意事項
-- 本テンプレートは日本語プロジェクトでの使用しか考慮していません。
+- [本テンプレート](https://github.com/dtxmuramasa/HonkitTemplate)は日本語プロジェクトでの使用しか考慮していません。
 	- This template is only considered for use in Japanese projects.
 - 本テンプレートはWindows環境に合わせて作成しています。
 - [Honkit](https://github.com/honkit/honkit)の成り立ちから、ところどころにGitbookの表記があります。
